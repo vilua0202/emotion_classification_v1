@@ -11,7 +11,7 @@ from track_utils import create_page_visited_table, add_page_visited_details, vie
 
 model = load_model('models/ckpt4.h5')
 
-with open('models/tokenizer4.pickle', 'rb') as handle:
+with open('../emotion_classification/models/tokenizer4.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 labels = ['sadness', 'joy', 'neutral', 'anger', 'fear', 'surprise']
